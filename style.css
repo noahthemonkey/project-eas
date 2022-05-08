@@ -1,0 +1,18 @@
+#square-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: aqua;
+    width: 960px;
+    height: 960px;
+}
+#square-container > * {
+    border-radius: 20px;
+    width: auto;
+    text-align: center;
+    margin: 1px;
+    border: solid black;
+    background-color: green;
+}
+
