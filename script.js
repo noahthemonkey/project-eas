@@ -3,7 +3,10 @@ let number = 16;
 let gridNumber = number * number
 
 function promptFunction(){
-    number = prompt('how many?')
+    number = prompt('How many? (max of 100)')
+        if (number > 100) {
+            number = 100
+        }
     let gridNumber = number * number
         gridFunc(gridNumber)
         gridMaker()
@@ -34,7 +37,7 @@ function gridFunc(gridNumber){
         squarediv.className = "square-" + x;
 
         squarediv.addEventListener('mouseover', function(){
-            squarediv.style = 'background: blueviolet'
+            squarediv.style = 'background: purple'
         })
 
         container.appendChild(squarediv);
